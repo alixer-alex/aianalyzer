@@ -1,4 +1,4 @@
-
+import './imagebutton.css'
 import { useState } from "react"
 export default function ImageButton(){
     const [photo, setPhoto]= useState();
@@ -10,7 +10,8 @@ export default function ImageButton(){
     return( 
     <>
         <input type="file" accept="image/*" id="myFile" name="filename" onChange={handleSubmit}/>
-        <img src={photo}/>
+        <br/>
+        <img className="image" src={photo}/>
     </>
     )
     
