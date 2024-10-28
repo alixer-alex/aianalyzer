@@ -11,7 +11,7 @@ export default function ImageButton(){
     <>
         <input type="file" accept="image/*" id="myFile" name="filename" onChange={handleSubmit}/>
         <br/>
-        <img className="image" src={photo}/>
+        <img className="max-w-screen-sm max-h-screen-sm" src={photo}/>
     </>
     )
     
